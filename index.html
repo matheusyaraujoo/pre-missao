@@ -1,0 +1,278 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré Missão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--html fotos-->
+
+    <!--class = o nome da div. nesse caso chama container-fotos, entao no css, para mexer nessa parte do projeto, devo colocar ".container-fotos" e fazer o que quero-->
+    <div class="container-fotos"> <!--o que fez as caixas ficarem uma ao lado da outra-->
+        <style>
+        .caixa {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .opcoes {
+            display: flex;
+            align-items: center;
+        }
+
+        .opcoes label {
+            margin-right: 10px;
+        }
+
+        p {
+            margin-bottom: 5px; /* Espaçamento inferior menor */
+        }
+
+        .titulo {
+            margin-bottom: -2px; /* Espaçamento inferior menor */
+        }
+
+        .subtitulo {
+            margin-top: -15px; /* Espaçamento superior menor */
+            margin-bottom: -15px; /* Espaçamento inferior menor */
+        }
+    </style>    
+</head>
+<body>
+    <header><h1>Memórias :)</h1></header>
+    <section>
+        <div class="caixa">
+            <p class>
+                Mês:
+                <select id="meses">
+                    <option value="">Escolha um mês</option>
+                    <option value="janeiro">Janeiro</option>
+                    <option value="fevereiro">Fevereiro</option>
+                    <option value="março">Março</option>
+                    <option value="abril">Abril</option>
+                    <option value="maio">Maio</option>
+                    <option value="junho">Junho</option>
+                    <option value="julho">Julho</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="setembro">Setembro</option>
+                    <option value="outubro">Outubro</option>
+                    <option value="novembro">Novembro</option>
+                    <option value="dezembro">Dezembro</option>
+                </select>
+            </p>
+        </div>
+        
+    <div class="caixa">
+        <p class="subtitulo">Foto:
+            <label for="opcaoBonita" style="display: inline-block;">
+                <input type="radio" name="opcao" value="bonita" id="opcaoBonita">
+                Bonitinha
+            </label>
+            <label for="opcaoZuada" style="display: inline-block;">
+                <input type="radio" name="opcao" value="zuada" id="opcaoZuada">
+                Zuada
+            </label>
+        </p>
+    </div>
+
+    <div class="caixa">
+        <button class="exibirFoto" style="cursor: pointer;" onclick="exibirFoto()">Exibir Foto</button>
+    </div>
+
+    <div class="caixa" id="fotoContainer" style="display: none;">
+        <img id="foto" src="" alt="">
+    </div>
+    </section>
+    <footer class="footer-memorias">
+        <p> Em breve juntos novamente!</p>
+    </footer>
+    </div>
+    
+    <!--html músicas-->
+    
+    <div class="container-musicas"> <!--o que fez as caixas ficarem uma ao lado da outra-->
+        <p class="titulo" style="font-size: 67px">Escolha sua trilha sonora:</p>
+        <p>
+        </p>
+         <div class="opcoes-musicas">
+        
+        <label for="musica1">
+            <input type="radio" name="musica" id="musica1" value="musica1">
+            Naked - James Arthur
+        </label>
+        <label for="musica2">
+            <input type="radio" name="musica" id="musica2" value="musica2">
+            Minha cura - MC Cabelinho
+        </label>
+        <label for="musica3">
+            <input type="radio" name="musica" id="musica3" value="musica3">
+            Photograph - Ed Sheeran
+        </label>
+        <label for="musica4">
+            <input type="radio" name="musica" id="musica4" value="musica4">
+            Monalisa - Xamã
+        </label>
+        <label for="musica5">
+            <input type="radio" name="musica" id="musica5" value="musica5">
+            Can I Have This Dance - High School Musical
+        </label>
+        <label for="musica6">
+            <input type="radio" name="musica" id="musica6" value="musica6">
+            That Part - Lauren Smith
+        </label>
+        <label for="musica7">
+            <input type="radio" name="musica" id="musica7" value="musica7">
+            Vejo enfim a luz brilhar - Enrolados
+        </label>
+        <label for="musica8">
+            <input type="radio" name="musica" id="musica8" value="musica8">
+            Those Eyes - New West
+        </label>
+        <label for="musica9">
+            <input type="radio" name="musica" id="musica9" value="musica9">
+            Nessas horas - Matheus & Kauan
+        </label>
+        <label for="musica10">
+            <input type="radio" name="musica" id="musica10" value="musica10">
+            Que sorte a nossa - Matheus & Kauan
+        </label>
+        <label for="musica11">
+            <input type="radio" name="musica" id="musica11" value="musica11">
+            Pupila - ANAVITÓRIA feat. Vitor Kley
+        </label>
+        <label for="musica12">
+            <input type="radio" name="musica" id="musica12" value="musica12">
+            Saturno - BIN
+        </label>
+        <label for="musica13">
+            <input type="radio" name="musica" id="musica13" value="musica13">
+            Deixe-me ir - 1Kilo
+        </label>
+        <label for="musica14">
+            <input type="radio" name="musica" id="musica14" value="musica14">
+            Sol loiro - Armandinho
+        </label>
+        <label for="musica15">
+            <input type="radio" name="musica" id="musica15" value="musica15">
+            Isso Que É Vida - Dennis e Cantini
+        </label>
+        <label for="musica16">
+            <input type="radio" name="musica" id="musica16" value="musica16">
+            Minha felicidade - Roberta Campos
+        </label>
+        <label for="musica17">
+            <input type="radio" name="musica" id="musica17" value="musica17">
+            A Vida é Boa Com Você - Bryan Behr
+        </label>
+        <label for="musica18">
+            <input type="radio" name="musica" id="musica18" value="musica18">
+            Hino do São Paulo Futebol Clube - O maior da história
+        </label>
+        <label for="musica19">
+            <input type="radio" name="musica" id="musica19" value="musica19">
+            Camiseta do Olímpia - Mathias, Renagol & Paulô feat. Rapaziada
+        </label>
+        <label for="musica20">
+            <input type="radio" name="musica" id="musica20" value="musica20">
+            Tropa do Olímpia - Bielzinho, Renagol, Jonas, Mathias & Paulô
+        </label>
+        
+        
+    </div>  
+    </div>
+ 
+    <!--html vídeos-->  
+
+        <!-- Seção de vídeos -->    
+
+        <div class="container-videosmozi">
+            <div class="container-videos">
+              <section class="box-videos">
+                <video id="videoPlayer" controls>
+                  <source src="" type="video/mp4">
+                </video>
+                <div class="video-options">
+                  <button id="prevVideoButton" onclick="playPreviousVideo()">&#8592;</button>
+                  <button id="nextVideoButton" onclick="playNextVideo()">&#8594;</button>
+                </div>
+                <div class="caixa2">
+                    <p style="margin-bottom: 1px;">Selecione o vídeo:</p>
+                    <select id="videoSelect" onchange="changeVideo()">
+                        <option value="">Escolha um vídeo</option>
+                    <option value="vdbemamigos">Bem amigos...</option>
+                    <option value="vdfranguinhos">Frangos!</option>
+                    <option value="vddancinha">Domino</option>
+                    <option value="vdvlogdapalha">Vlog da palha</option>
+                    <option value="vdjogadeladin">Joga de ladin</option>
+                    <option value="vdperguntas">Surto coletivo???</option>
+                    <option value="vdcreminho">Passando creminho</option>
+                    <option value="vdfigurinhas">Abrindo pacotinhos</option>
+                    <option value="vdpqvcamatantoele">"Porque vc ama tanto ele?"</option>
+                    <option value="vdmonalisa">Quantos lados loucos você tem?</option>
+                    <option value="vdguaraviton">A melhor bebida do planeta!!!</option>
+                    <option value="vdamoreterno">Amor eterno</option>
+                    <option value="vdbeijinho">Explosão de sentimentos</option>
+                    <option value="vdassistindoaconferencia">Focada na conferência</option>
+                    <option value="vdproduçãopalha">Yamitta 🤝 Gabitta</option>
+                    <option value="vdceuazul">Só vou gastar energia...</option>
+                    <option value="vdbobinhoporvc">Bobinho por vc</option>
+                    <option value="vdmulhernovolante">Mulher no volante...</option>
+                    <option value="vdrelato3">Partiu SP...</option>
+                    <option value="vdrelato4">Deu ruim?</option>
+                    <option value="vdrelato5">Deu bom!!!</option>
+                    <option value="vdrelato6">Eu tentei</option>
+                    <option value="vdshhh">Shhhh...</option>
+                    <option value="vdrelatomozijump">Vai ter que se contentar!</option>
+                    <option value="ThiasGameplaysBR2005">ThiasGameplaysBR2005</option>
+                    <option value="vdissoqueévida">Isso que é vida</option>
+                    <option value="vdspxcorinthians">Momentos de tensão</option>
+                    <option value="vdobservação">Acho que você não entendeu ainda...</option>
+                    <option value="vdempolgação">Classificados!!!</option>
+                    <option value="vdclassificados">Dia histórico</option>
+                    <option value="vdapaixonado">Apaixonado</option>
+                    <option value="vdbeijo">Kiss</option>
+                    <option value="vdsomeonelikeyou">Someone Like You...</option>
+
+            </select>
+          </div>
+        </section>
+
+        
+      
+        <!-- Seção do link mozi jump -->
+        
+        <div class="container-mozi">
+        <div class="mozi-link">
+            <div class="overlay-mozi">
+              <h2><span class="azul">M</span><span class="amarelo">O</span><span class="vermelho">Z</span><span class="verde">I</span><span class="azul"> J</span><span class="amarelo">U</span><span class="vermelho">M</span><span class="verde">P</span></h2>
+              <a href="https://mozijump.netlify.app/" target="_blank"><!--"blank" faz abrir em uma nova aba-->
+              <button>Jogar</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+    <footer class="footer-videos">
+        <p>
+            Te amo pra sempre ❤️
+        </p>
+    </footer>
+
+    <audio id="player" controls></audio>
+
+</body>
+</html>
+
+<script src="script.js"></script>
+
